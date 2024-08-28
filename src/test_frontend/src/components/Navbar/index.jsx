@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="/path/to/logo.png" alt="Agritek Solution Save Warehouse" />
+        <img src="../..//public/logo.jpeg" alt="Agritek Solution Save Warehouse" />
       </div>
       <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
         <Link to="/">Home</Link>

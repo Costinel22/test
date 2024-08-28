@@ -6,7 +6,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
-          <img src="/path/to/logo.png" alt="Agritek Solution Save Warehouse" />
+          <img src="../..//public/logo.jpeg" alt="Agritek Solution Save Warehouse" />
+          <h4>Agritek Solution Saves Warehouse </h4>
+          <h4>Transforming Agricultural Logistics</h4>
+          <h4>Where Efficiency Meets Transparency</h4>
         </div>
         <div className="footer-quick-links">
           <h4>Quick Links</h4>
@@ -36,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2024 Agritek Solution Save Warehouse. All rights reserved.</p>
+        <p>© 2024 Agritek Solution Saves Warehouse. All rights reserved.</p>
       </div>
     </footer>
   );
