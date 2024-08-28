@@ -1,0 +1,69 @@
+.home {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .home-header {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .home-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .home-header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+  }
+  
+  .home-overview, .home-features, .home-benefits, .home-call-to-action, .home-links {
+    margin: 20px 0;
+  }
+  
+  .home-overview h2, .home-features h2, .home-benefits h2, .home-call-to-action h2, .home-links h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .home-features ul, .home-benefits ul, .home-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .home-features li, .home-benefits li, .home-links li {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .home-features li svg, .home-links li svg {
+    margin-right: 10px;
+  }
+  
+  .home-call-to-action .cta-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .home-call-to-action .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .home-links a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .home-links a:hover {
+    text-decoration: underline;
+  }
+  
