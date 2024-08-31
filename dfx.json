@@ -4,6 +4,14 @@
       "main": "src/test_backend/main.mo",
       "type": "motoko"
     },
+    "transportManagement": {
+      "dependencies": [
+      "test_backend"
+      ],
+       "main": "src/test_backend/main.mo",
+       "type": "motoko"
+    },
+
     "test_frontend": {
       "dependencies": [
         "test_backend"

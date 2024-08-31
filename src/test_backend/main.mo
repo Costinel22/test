@@ -1,5 +1,8 @@
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";
+import transportManagement "transportManagement";
+// import UserManagement "userManagement";
+// import management "management";
 
 actor ProductManagement {
   stable var products : [Product] = [];
@@ -21,16 +24,31 @@ actor ProductManagement {
   public query func getProducts() : async [Product] {
     return products;
   };
+  // type Transport = {
+  //   id: Nat;
+  //   name: Text;
+  //   status: Text;
+  // };
 
-  public func addProduct(name: Text, quantity: Nat) : async Product {
-    let newProduct = {
-      id = Nat(products.size() + 1);
-      name = name;
-      quantity = quantity;
-    };
-    products := Array.append(products, [newProduct]);
-    return newProduct;
-  };
+  // type Resource = {
+  //   id: Nat;
+  //   name: Text;
+  //   allocation: Text;
+  // };
+  // stable var transports : [Transport] = [];
+  // stable var resources : [Resource] = [];
+
+//   public func addProduct(name: Text, quantity: Nat) : async Product {
+//     let newProduct = {
+//       id: ...Nat(products.size() + 1);
+//       name= name;
+//       quantity= quantity;
+//     };
+//     products := Array.append(products, [newProduct]);
+//     return newProduct;
+// };
+
+
 
   public func updateProduct(id: Nat, quantity: Nat) : async ?Product {
     var updatedProduct : ?Product = null;
@@ -62,57 +80,49 @@ actor ProductManagement {
     return damageReports;
   };
 
-  public func reportDamage(productId: Nat, quantity: Nat, reason: Text) : async DamageReport {
-    let newReport = {
-      id = Nat(damageReports.size() + 1);
-      productId = productId;
-      quantity = quantity;
-      reason = reason;
-    };
-    damageReports := Array.append(damageReports, [newReport]);
-    return newReport;
-  };
+  // public func reportDamage(productId: Nat, quantity: Nat, reason: Text) : async DamageReport {
+  //   let newReport = {
+  //     id = Nat(damageReports.size() + 1);
+  //     productId = productId;
+  //     quantity = quantity;
+  //     reason = reason;
+  //   };
+  //   damageReports := Array.append(damageReports, [newReport]);
+  //   return newReport;
+  // };
 
-  stable var transports : [Transport] = [];
-  stable var resources : [Resource] = [];
 
-  type Transport = {
-    id: Nat;
-    name: Text;
-    status: Text;
-  };
+  
 
-  type Resource = {
-    id: Nat;
-    name: Text;
-    allocation: Text;
-  };
+  // public query func getTransports() : async [Transport] {
+  //   return transports;
+  // };
 
-  public query func getTransports() : async [Transport] {
-    return transports;
-  };
+  // public func addTransport(name: Text, status: Text) : async Transport {
+  //   let newTransport = {
+  //     id = Nat(transports.size() + 1);
+  //     name = name;
+  //     status = status;
+  //   };
+  //   transports := Array.append(transports, [newTransport]);
+  //   return newTransport;
+  // };
 
-  public func addTransport(name: Text, status: Text) : async Transport {
-    let newTransport = {
-      id = Nat(transports.size() + 1);
-      name = name;
-      status = status;
-    };
-    transports := Array.append(transports, [newTransport]);
-    return newTransport;
-  };
-
-  public query func getResources() : async [Resource] {
-    return resources;
-  };
-
-  public func addResource(name: Text, allocation: Text) : async Resource {
-    let newResource = {
-      id = Nat(resources.size() + 1);
-      name = name;
-      allocation = allocation;
-    };
-    resources := Array.append(resources, [newResource]);
-    return newResource;
-  };
+//   public query func getResources() : async [Resource] {
+//     return resources;
+//   };
+  
+//   public func addResource(name: Text, allocation: Text) : async Resource {
+//     let newId = Nat(resources.size() + 1);
+// 01234567891234567890    
+//     let newResource = {
+//       id = newId;
+//       name = name;
+//       allocation = allocation;
+//     };
+//     resources := Array.append(resources, [newResource]);
+//     return newResource;
+//   };
+  
+  
 };

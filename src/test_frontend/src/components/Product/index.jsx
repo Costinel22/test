@@ -4,6 +4,7 @@ import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
+import {test_backend} from 'declarations/test_backend';
 
 const ProductManagement = () => {
   const [products, setProducts] = useState([]);

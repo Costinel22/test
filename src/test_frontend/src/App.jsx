@@ -11,6 +11,8 @@ import TransportAndLogistics from './components/TransportAndLogistics';
 import MaintenanceAndResources from './components/MaintenanceAndResources';
 import TransportMonitoring from './components/TransportMonitoring';
 import UserDashboard from './components/UserDashboard';
+import SignupForm from './components/SignupForm';
+import {test_backend} from 'declarations/test_backend';
 
 const App = () => {
   return (
@@ -29,6 +31,7 @@ const App = () => {
             <Route path='/' element={<ResourceManagement />} />
             <Route path='/maintenance' element={<MaintenanceAndResources />} />
             <Route path='/dashboard' element={< UserDashboard />} />
+            <Route path='/signup' element={<SignupForm />} />
           </Routes>
         </Wrapper>
         <Footer />

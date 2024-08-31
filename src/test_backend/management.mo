@@ -2,21 +2,11 @@ import Nat "mo:base/Nat";
 import Array "mo:base/Array";
 
 actor Management {
+  // Define your stable variables here (if needed)
   stable var transports : [Transport] = [];
   stable var resources : [Resource] = [];
 
-  type Transport = {
-    id: Nat;
-    name: Text;
-    status: Text;
-  };
-
-  type Resource = {
-    id: Nat;
-    name: Text;
-    allocation: Text;
-  };
-
+  // Define your actor methods here
   public query func getTransports() : async [Transport] {
     return transports;
   };

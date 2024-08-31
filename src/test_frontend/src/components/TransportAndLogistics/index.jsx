@@ -1,6 +1,7 @@
 // TransportAndLogistics.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import {test_backend} from 'declarations/test_backend';
 // import './style.css';
 
 const TransportAndLogistics = () => {
